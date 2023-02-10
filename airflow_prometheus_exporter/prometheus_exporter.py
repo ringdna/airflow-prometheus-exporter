@@ -281,7 +281,7 @@ def get_task_duration_info():
         )
 
 def get_running_task_duration_info():
-    """Duration of successful tasks in seconds."""
+    """Duration of running tasks in seconds."""
     with session_scope(Session) as session:
         max_execution_dt_query = (
             session.query(
